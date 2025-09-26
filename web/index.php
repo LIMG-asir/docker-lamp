@@ -4,7 +4,7 @@ $db   = getenv('MYSQL_DATABASE') ?: 'appdb';
 $user = getenv('MYSQL_USER') ?: 'appuser'; 
 $pass = getenv('MYSQL_PASSWORD') ?: 'app1234'; 
 $dsn  = "mysql:host=$host;dbname=$db;charset=utf8mb4"; 
- 
+#esto es un comentario
 try { 
   $pdo = new PDO($dsn, $user, $pass, [ 
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
